@@ -1,0 +1,21 @@
+Full Stack Web Developer (React / Node.js)
+
+Company: CloudScale Innovations
+Location: San Francisco, CA / Hybrid
+Role Type: Full-Time
+
+Job Description:
+We are looking for a talented Full Stack Web Developer to design and implement responsive, high-performance web applications and cloud services. You will build user-facing features, microservices, and database schemas.
+
+Key Responsibilities:
+- Build responsive, accessible frontend components using React, Next.js, TypeScript, and HTML/CSS.
+- Develop robust REST APIs and backend microservices using Node.js, Express, and Python.
+- Model and optimize relational databases including PostgreSQL and MySQL, as well as MongoDB.
+- Configure and manage Docker containers, AWS cloud resources, and CI/CD pipelines with GitHub Actions.
+- Ensure code quality via Unit Testing, code reviews, and Git version control.
+- Work closely with designers and product owners in an Agile / Scrum framework.
+
+Required Skills:
+- Proficiency in JavaScript, TypeScript, React, Node.js, and HTML/CSS.
+- Experience with PostgreSQL, MySQL, Docker, AWS, and Git.
+- Familiarity with REST APIs and Linux environments.

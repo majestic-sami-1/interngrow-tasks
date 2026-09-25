@@ -1,0 +1,25 @@
+Senior AI & Machine Learning Engineer
+
+Company: NeuroPulse Technologies
+Location: Remote / New York, NY
+Role Type: Full-Time
+
+About the Role:
+We are seeking an experienced and passionate Senior Machine Learning Engineer to lead the architecture, development, and deployment of enterprise-grade AI applications. You will collaborate closely with data engineering, backend, and product teams to translate complex business problems into scalable machine learning and deep learning pipelines.
+
+Key Responsibilities:
+- Design, train, evaluate, and deploy Machine Learning, Deep Learning, and NLP models.
+- Develop end-to-end data processing pipelines using Python, Pandas, NumPy, and Scikit-Learn.
+- Build and fine-tune Large Language Models (LLMs) using Hugging Face Transformers and LangChain.
+- Containerize machine learning services with Docker and orchestrate deployments on AWS and Kubernetes.
+- Implement robust CI/CD pipelines, Git version control, and Unit Testing suites for reliable ML delivery.
+- Query and manage relational and NoSQL databases including PostgreSQL, MySQL, and Redis.
+- Scale distributed computation jobs using Apache Spark.
+
+Required Qualifications & Skills:
+- 4+ years of professional software engineering and machine learning experience.
+- Strong proficiency in Python, Machine Learning, Deep Learning, Scikit-Learn, PyTorch, and TensorFlow.
+- Solid background in Natural Language Processing (NLP) or Computer Vision.
+- Hands-on experience with Docker, Kubernetes, AWS, and Git CI/CD.
+- Experience with SQL and PostgreSQL.
+- Excellent communication and Agile / Scrum teamwork experience.

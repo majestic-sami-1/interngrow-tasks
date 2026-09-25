@@ -1,0 +1,63 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 800 >>
+stream
+BT
+/F1 11 Tf
+14.4 TL
+50 740 Td
+(David Chen - Full Stack Engineer) Tj
+T*
+T*
+(Email: david.chen@devmail.io | Phone: +1-415-555-9082) Tj
+T*
+(Professional Summary:) Tj
+T*
+(Full Stack Software Developer with 5 years building scalable web apps and REST APIs.) Tj
+T*
+(Technical Skills:) Tj
+T*
+(Languages: JavaScript, TypeScript, Python, HTML/CSS, SQL) Tj
+T*
+(Frontend: React, Next.js, Redux) Tj
+T*
+(Backend: Node.js, Express, FastAPI, REST APIs) Tj
+T*
+(Databases & Cloud: PostgreSQL, MySQL, Redis, AWS, Docker, Git, CI/CD, Linux) Tj
+T*
+(Professional Experience:) Tj
+T*
+(- Engineered interactive dashboards using React, Next.js, and TypeScript.) Tj
+T*
+(- Developed Node.js and Express backend microservices with PostgreSQL.) Tj
+T*
+(- Automated containerized releases via Docker, AWS, and Git CI/CD.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001092 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1162
+%%EOF
