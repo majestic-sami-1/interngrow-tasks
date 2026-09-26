@@ -1,0 +1,145 @@
+{
+  "risk_model": {
+    "model_type": "Random Forest Classifier (Balanced)",
+    "accuracy": 0.5725,
+    "precision": 0.5773,
+    "recall": 0.5725,
+    "f1_score": 0.5713,
+    "cv_mean_accuracy": 0.5867,
+    "cv_std": 0.0167,
+    "labels": [
+      "Aggressive",
+      "Balanced",
+      "Conservative",
+      "Moderate"
+    ],
+    "confusion_matrix": [
+      [
+        58,
+        27,
+        0,
+        3
+      ],
+      [
+        48,
+        69,
+        0,
+        26
+      ],
+      [
+        0,
+        0,
+        21,
+        18
+      ],
+      [
+        5,
+        22,
+        22,
+        81
+      ]
+    ],
+    "feature_importance": [
+      [
+        "investment_horizon",
+        0.228
+      ],
+      [
+        "age",
+        0.1922
+      ],
+      [
+        "emergency_months",
+        0.0903
+      ],
+      [
+        "wealth_to_income",
+        0.0587
+      ],
+      [
+        "current_investments",
+        0.0488
+      ],
+      [
+        "savings_rate",
+        0.0471
+      ],
+      [
+        "net_worth",
+        0.0451
+      ],
+      [
+        "current_savings",
+        0.0411
+      ],
+      [
+        "dti_ratio",
+        0.041
+      ],
+      [
+        "credit_score",
+        0.0395
+      ],
+      [
+        "debt_to_assets",
+        0.036
+      ],
+      [
+        "annual_income",
+        0.0319
+      ],
+      [
+        "monthly_expenses",
+        0.0317
+      ],
+      [
+        "total_debt",
+        0.0272
+      ],
+      [
+        "monthly_debt_payment",
+        0.0271
+      ],
+      [
+        "dependents",
+        0.0144
+      ]
+    ]
+  },
+  "health_model": {
+    "model_type": "Gradient Boosting Regressor",
+    "r2_score": 0.9893,
+    "mae": 1.4573,
+    "rmse": 1.8878
+  },
+  "distress_model": {
+    "model_type": "Balanced Random Forest Classifier",
+    "accuracy": 0.98,
+    "f1_score": 0.8182,
+    "roc_auc": 0.9964
+  },
+  "dataset_summary": {
+    "total_samples": 2000,
+    "train_samples": 1600,
+    "test_samples": 400,
+    "features_count": 16,
+    "feature_names": [
+      "age",
+      "annual_income",
+      "monthly_expenses",
+      "dependents",
+      "credit_score",
+      "total_debt",
+      "monthly_debt_payment",
+      "current_savings",
+      "current_investments",
+      "investment_horizon",
+      "dti_ratio",
+      "savings_rate",
+      "emergency_months",
+      "net_worth",
+      "wealth_to_income",
+      "debt_to_assets"
+    ]
+  }
+}
