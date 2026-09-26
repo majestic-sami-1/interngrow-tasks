@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova AI - Enterprise Customer Support Chatbot</title>
+  <meta name="description" content="Intelligent AI Customer Support Chatbot with Intent Recognition, Confidence Scoring, FAQ Knowledge Base, Voice Input, and Multilingual Support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-layout">
+    
+    <!-- LEFT SIDEBAR: Sessions & Navigation -->
+    <aside class="sidebar-left" id="sidebarLeft">
+      <div class="sidebar-header">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10a9.96 9.96 0 0 1-4.587-1.113L3 21l1.113-4.413A9.96 9.96 0 0 1 2 12 10 10 0 0 1 12 2z"/>
+              <circle cx="8" cy="12" r="1"/>
+              <circle cx="12" cy="12" r="1"/>
+              <circle cx="16" cy="12" r="1"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h2>Nova AI</h2>
+            <span>Support Suite</span>
+          </div>
+        </div>
+        <button class="icon-btn" id="newChatBtn" title="Start New Chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="sidebar-nav-actions">
+        <button class="nav-action-btn" id="openFaqModalBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>FAQ Knowledge Base</span>
+        </button>
+        <button class="nav-action-btn" id="openTicketsModalBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Support Tickets</span>
+          <span class="badge" id="ticketCountBadge">0</span>
+        </button>
+      </div>
+
+      <!-- Conversation History Sessions List -->
+      <div class="sessions-section">
+        <div class="section-title">
+          <span>Conversation History</span>
+          <button class="text-btn" id="exportChatBtn" title="Export Current Chat">Export</button>
+        </div>
+        <div class="sessions-list" id="sessionsList">
+          <!-- Session items loaded dynamically -->
+        </div>
+      </div>
+
+      <!-- Sidebar Footer Settings -->
+      <div class="sidebar-footer">
+        <button class="settings-trigger-btn" id="openSettingsModalBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span id="activeEngineText">Engine: Local NLP</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- CENTER CHAT AREA -->
+    <main class="chat-main">
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <button class="icon-btn mobile-menu-toggle" id="mobileMenuBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="agent-status-badge">
+            <span class="status-dot"></span>
+            <div>
+              <h1 class="header-title">Customer Support Assistant</h1>
+              <span class="status-subtitle" id="agentStatusText">Online • Ready to help</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- Multi-language Selector -->
+          <div class="lang-selector-wrap">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <select id="languageSelector" aria-label="Select Language">
+              <option value="en" selected>English (US)</option>
+              <option value="es">Español (ES)</option>
+              <option value="fr">Français (FR)</option>
+              <option value="de">Deutsch (DE)</option>
+              <option value="ur">اردو (Urdu)</option>
+              <option value="hi">हिंदी (Hindi)</option>
+              <option value="ar">العربية (Arabic)</option>
+            </select>
+          </div>
+
+          <!-- TTS Auto-Speak Toggle -->
+          <button class="icon-btn" id="ttsAutoToggleBtn" title="Toggle Auto Read Aloud (TTS)">
+            <svg id="ttsIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+
+          <!-- Dark/Light Theme Toggle -->
+          <button class="icon-btn" id="themeToggleBtn" title="Toggle Theme">
+            <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- Context Inspector Toggle -->
+          <button class="icon-btn" id="inspectorToggleBtn" title="Toggle Context Inspector">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="15" y1="3" x2="15" y2="21"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Quick Suggestion Action Pills -->
+      <div class="quick-pills-bar">
+        <div class="quick-pill" data-query="Track my order ORD-10002">📦 Track ORD-10002</div>
+        <div class="quick-pill" data-query="What is your return policy?">🔄 Return Policy</div>
+        <div class="quick-pill" data-query="What payment methods do you accept?">💳 Payment Methods</div>
+        <div class="quick-pill" data-query="How long does international shipping take?">✈️ Shipping Rates</div>
+        <div class="quick-pill" data-query="I want to speak with a human agent">👤 Human Agent</div>
+      </div>
+
+      <!-- Messages Stream Scroll Area -->
+      <div class="chat-messages-container" id="chatMessagesContainer">
+        <div class="chat-messages-stream" id="chatMessagesStream">
+          <!-- Messages injected via JS -->
+        </div>
+        
+        <!-- Live Typing Indicator -->
+        <div class="typing-indicator-wrap" id="typingIndicator" style="display: none;">
+          <div class="typing-bubble">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <span class="typing-label">Nova is thinking...</span>
+        </div>
+      </div>
+
+      <!-- Voice Wave Visualizer Bar (Shown during Voice STT) -->
+      <div class="voice-wave-container" id="voiceWaveBar" style="display: none;">
+        <div class="wave-pulse">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="voice-status-label" id="voiceStatusText">Listening... Speak into your microphone</span>
+        <button class="stop-voice-btn" id="stopVoiceBtn">Stop</button>
+      </div>
+
+      <!-- Input Footer Area -->
+      <footer class="chat-input-footer">
+        <div class="input-form-box">
+          <!-- Voice Input Button (STT) -->
+          <button class="voice-mic-btn" id="voiceInputBtn" title="Voice Input (Speech-to-Text)">
+            <svg id="micIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="23"></line>
+              <line x1="8" y1="23" x2="16" y2="23"></line>
+            </svg>
+          </button>
+
+          <textarea 
+            id="chatInputField" 
+            placeholder="Type your question or message... (Press Enter to send, Shift+Enter for new line)"
+            rows="1"
+          ></textarea>
+
+          <!-- Send Message Button -->
+          <button class="send-msg-btn" id="sendMessageBtn" title="Send Message">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="footer-meta">
+          <span>Nova AI Support Engine v2.0 • NLP Intent Classifier • Context Memory Active</span>
+        </div>
+      </footer>
+    </main>
+
+    <!-- RIGHT SIDEBAR: Live Context & Intent Inspector -->
+    <aside class="sidebar-right" id="sidebarRight">
+      <div class="inspector-header">
+        <div class="inspector-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <h3>Context Inspector</h3>
+        </div>
+        <button class="icon-btn close-inspector-btn" id="closeInspectorBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="inspector-body">
+        <!-- Live Intent Recognition Card -->
+        <div class="inspector-card">
+          <span class="card-label">Recognized Intent</span>
+          <div class="intent-badge-large" id="inspectorIntentBadge">
+            <span class="intent-dot"></span>
+            <span id="inspectorIntentText">greeting</span>
+          </div>
+        </div>
+
+        <!-- Live Confidence Score Gauge -->
+        <div class="inspector-card">
+          <div class="card-header-flex">
+            <span class="card-label">Confidence Score</span>
+            <span class="confidence-val" id="inspectorConfidenceVal">95%</span>
+          </div>
+          <div class="confidence-bar-track">
+            <div class="confidence-bar-fill high-confidence" id="inspectorConfidenceFill" style="width: 95%;"></div>
+          </div>
+          <span class="confidence-rating-label" id="inspectorConfidenceLabel">High Confidence</span>
+        </div>
+
+        <!-- Extracted Entities / Context Slots -->
+        <div class="inspector-card">
+          <span class="card-label">Session Entities & Memory</span>
+          <div class="entities-table-wrap">
+            <table class="entities-table">
+              <tbody id="inspectorEntitiesList">
+                <tr><td>Order ID:</td><td id="entityOrderId"><span class="empty-val">None</span></td></tr>
+                <tr><td>Customer:</td><td id="entityCustomerName"><span class="empty-val">None</span></td></tr>
+                <tr><td>Email:</td><td id="entityEmail"><span class="empty-val">None</span></td></tr>
+                <tr><td>Language:</td><td id="entityLang">en</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Human Escalation Action Card -->
+        <div class="inspector-card escalation-card">
+          <span class="card-label">Human Agent Escalation</span>
+          <p class="escalation-desc">If bot confidence is low or complex human handling is needed, open an escalation ticket directly.</p>
+          <button class="escalate-btn" id="escalateTicketBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <line x1="20" y1="8" x2="20" y2="14"></line>
+              <line x1="23" y1="11" x2="17" y2="11"></line>
+            </svg>
+            <span>Create Support Ticket</span>
+          </button>
+        </div>
+
+        <!-- Voice & Audio Settings Card -->
+        <div class="inspector-card">
+          <span class="card-label">Speech & Voice Controls</span>
+          <div class="control-row">
+            <label for="ttsVoiceSelect">TTS Voice:</label>
+            <select id="ttsVoiceSelect" class="form-select-sm"></select>
+          </div>
+          <div class="control-row">
+            <label for="ttsRateSlider">Speech Speed:</label>
+            <input type="range" id="ttsRateSlider" min="0.8" max="1.5" step="0.1" value="1.0">
+            <span id="ttsRateVal">1.0x</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- MODAL: FAQ Knowledge Base Explorer -->
+  <div class="modal-overlay" id="faqModal" style="display: none;">
+    <div class="modal-window modal-wide">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <h3>Enterprise FAQ Knowledge Base</h3>
+        </div>
+        <button class="icon-btn modal-close-btn" id="closeFaqModalBtn">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="faq-modal-controls">
+          <div class="search-input-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="faqSearchInput" placeholder="Search knowledge base articles or policies...">
+          </div>
+          <div class="faq-category-filters" id="faqCategoryPills">
+            <!-- Loaded dynamically -->
+          </div>
+        </div>
+
+        <div class="faq-list-container" id="faqItemsList">
+          <!-- FAQ accordion cards loaded dynamically -->
+        </div>
+
+        <!-- Add Custom FAQ Accordion -->
+        <div class="add-faq-box">
+          <button class="toggle-add-faq-btn" id="toggleAddFaqBtn">+ Add New FAQ Article</button>
+          <div class="add-faq-form" id="addFaqForm" style="display: none;">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Category</label>
+                <input type="text" id="newFaqCategory" placeholder="e.g. Warranty, Invoicing">
+              </div>
+              <div class="form-group">
+                <label>Keywords (comma separated)</label>
+                <input type="text" id="newFaqKeywords" placeholder="e.g. warranty, replacement, defect">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Question</label>
+              <input type="text" id="newFaqQuestion" placeholder="Enter customer question">
+            </div>
+            <div class="form-group">
+              <label>Answer / Solution</label>
+              <textarea id="newFaqAnswer" rows="3" placeholder="Enter comprehensive customer response"></textarea>
+            </div>
+            <button class="primary-btn" id="saveFaqBtn">Save to Knowledge Base</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Support Tickets Overview & Escalation -->
+  <div class="modal-overlay" id="ticketsModal" style="display: none;">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3>Customer Support Tickets</h3>
+        </div>
+        <button class="icon-btn modal-close-btn" id="closeTicketsModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="tickets-list-wrap" id="ticketsContainer">
+          <!-- Ticket cards injected here -->
+        </div>
+
+        <div class="create-ticket-form-card">
+          <h4>Escalate & Open New Ticket</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="ticketCustomerName" placeholder="Alex Morgan">
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="ticketEmail" placeholder="alex@example.com">
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Issue Category</label>
+              <select id="ticketCategory">
+                <option value="Order Tracking">Order Tracking</option>
+                <option value="Returns & Refunds">Returns & Refunds</option>
+                <option value="Billing & Payments">Billing & Payments</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Account Access">Account Access</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Priority</label>
+              <select id="ticketPriority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+                <option value="Urgent">Urgent</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Issue Summary / Details</label>
+            <textarea id="ticketSummary" rows="3" placeholder="Describe the issue or what you need assistance with..."></textarea>
+          </div>
+          <button class="primary-btn" id="submitTicketBtn">Submit Priority Ticket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Settings & LLM Configuration -->
+  <div class="modal-overlay" id="settingsModal" style="display: none;">
+    <div class="modal-window modal-sm">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <h3>AI Engine & LLM Settings</h3>
+        </div>
+        <button class="icon-btn modal-close-btn" id="closeSettingsModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="settings-desc">Nova operates with a high-accuracy offline NLP rule & semantic knowledge engine by default. You can also connect your own LLM API key.</p>
+        
+        <div class="form-group">
+          <label>Provider</label>
+          <select id="llmProviderSelect">
+            <option value="local">Local Intelligent NLP Engine (Offline, Zero Setup)</option>
+            <option value="gemini">Google Gemini (gemini-1.5-flash / gemini-2.0)</option>
+            <option value="openai">OpenAI (gpt-4o-mini / gpt-4o)</option>
+            <option value="groq">Groq (Llama 3.1 8B Instant)</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="apiKeyGroup" style="display: none;">
+          <label>API Key</label>
+          <input type="password" id="llmApiKeyInput" placeholder="Enter API key...">
+          <small class="field-hint" id="apiKeyHint">Keys are securely kept locally in llm_config.json</small>
+        </div>
+
+        <div class="modal-actions">
+          <button class="primary-btn" id="saveSettingsBtn">Save Settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification"></div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
