@@ -1,0 +1,184 @@
+[
+  {
+    "id": "user-1",
+    "name": "Alex Rivera",
+    "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&h=120&q=80",
+    "bio": "Sci-Fi nerd & AI researcher. Obsessed with time dilation, cyberpunk neon aesthetics, and mind-bending plots.",
+    "preferred_genres": [
+      "Sci-Fi",
+      "Cyberpunk",
+      "Adventure"
+    ],
+    "ratings": {
+      "item-1": 5.0,
+      "item-2": 5.0,
+      "item-3": 4.8,
+      "item-4": 4.5,
+      "item-9": 4.9,
+      "item-10": 4.2,
+      "item-16": 4.6,
+      "item-20": 4.7,
+      "item-11": 5.0
+    },
+    "watchlist": [
+      "item-17",
+      "item-24",
+      "item-30"
+    ],
+    "history": [
+      {
+        "item_id": "item-1",
+        "action": "watched",
+        "timestamp": "2026-03-01T14:20:00Z"
+      },
+      {
+        "item_id": "item-2",
+        "action": "watched",
+        "timestamp": "2026-03-03T19:30:00Z"
+      },
+      {
+        "item_id": "item-9",
+        "action": "rated",
+        "score": 4.9,
+        "timestamp": "2026-03-05T21:00:00Z"
+      },
+      {
+        "item_id": "item-11",
+        "item_title": "The Godfather",
+        "action": "rated",
+        "score": 5.0,
+        "timestamp": "2026-09-13T07:17:26.725317Z"
+      },
+      {
+        "item_id": "item-11",
+        "item_title": "The Godfather",
+        "action": "rated",
+        "score": 5.0,
+        "timestamp": "2026-09-13T07:17:44.210152Z"
+      }
+    ]
+  },
+  {
+    "id": "user-2",
+    "name": "Sophia Chen",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80",
+    "bio": "Film critic & festival juror. Appreciates psychological depth, nuanced directing, and award-winning dramas.",
+    "preferred_genres": [
+      "Drama",
+      "Crime",
+      "Biography"
+    ],
+    "ratings": {
+      "item-5": 4.8,
+      "item-6": 5.0,
+      "item-7": 4.9,
+      "item-11": 5.0,
+      "item-12": 4.7,
+      "item-23": 4.8,
+      "item-25": 5.0
+    },
+    "watchlist": [
+      "item-19",
+      "item-28"
+    ],
+    "history": [
+      {
+        "item_id": "item-6",
+        "action": "rated",
+        "score": 5.0,
+        "timestamp": "2026-02-28T18:00:00Z"
+      },
+      {
+        "item_id": "item-7",
+        "action": "watched",
+        "timestamp": "2026-03-02T20:15:00Z"
+      }
+    ]
+  },
+  {
+    "id": "user-3",
+    "name": "Marcus Vance",
+    "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=120&h=120&q=80",
+    "bio": "Adrenaline junkie & martial arts fan. High-octane stunts, tight choreography, and superhero sagas.",
+    "preferred_genres": [
+      "Action",
+      "Crime",
+      "Adventure"
+    ],
+    "ratings": {
+      "item-2": 4.5,
+      "item-3": 4.7,
+      "item-5": 4.9,
+      "item-8": 5.0,
+      "item-21": 4.8,
+      "item-22": 4.9,
+      "item-26": 4.8
+    },
+    "watchlist": [
+      "item-10",
+      "item-31"
+    ],
+    "history": [
+      {
+        "item_id": "item-8",
+        "action": "rated",
+        "score": 5.0,
+        "timestamp": "2026-03-06T22:10:00Z"
+      }
+    ]
+  },
+  {
+    "id": "user-4",
+    "name": "Elena Rostova",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80",
+    "bio": "Hopeless romantic & music enthusiast. Paris aesthetics, poignant dialogue, and comforting heartwarming stories.",
+    "preferred_genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "ratings": {
+      "item-13": 5.0,
+      "item-14": 4.9,
+      "item-15": 4.8,
+      "item-27": 4.6,
+      "item-32": 5.0,
+      "item-1": 4.5
+    },
+    "watchlist": [
+      "item-6",
+      "item-29"
+    ],
+    "history": [
+      {
+        "item_id": "item-13",
+        "action": "watched",
+        "timestamp": "2026-03-04T16:00:00Z"
+      },
+      {
+        "item_id": "item-1",
+        "item_title": "Interstellar",
+        "action": "rated",
+        "score": 4.5,
+        "timestamp": "2026-09-13T07:10:38.424183Z"
+      },
+      {
+        "item_id": "item-1",
+        "item_title": "Interstellar",
+        "action": "rated",
+        "score": 4.5,
+        "timestamp": "2026-09-13T07:11:01.713876Z"
+      }
+    ]
+  },
+  {
+    "id": "user-5",
+    "name": "Cold-Start Guest",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80",
+    "bio": "Brand new user with 0 ratings. Perfect test subject for Hybrid cold-start fallback & popularity prior.",
+    "preferred_genres": [],
+    "ratings": {},
+    "watchlist": [],
+    "history": []
+  }
+]

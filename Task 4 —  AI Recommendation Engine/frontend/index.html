@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CineMatch AI - Next-Gen Hybrid Recommendation Engine featuring Content-Based Filtering, Collaborative Filtering via SVD, and User Profile Analysis.">
+  <title>CineMatch AI — Intelligent Recommendation Engine</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+
+  <!-- Top App Navigation Header -->
+  <header class="header" id="app-header">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand" id="brand-link">
+        <div class="brand-logo-icon" id="brand-logo-icon">C</div>
+        <div>
+          <span class="brand-title">CineMatch AI</span>
+          <span class="brand-badge">ML Engine</span>
+        </div>
+      </a>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs" id="nav-tabs">
+        <button class="nav-tab-btn active" data-tab="browse" id="nav-tab-browse">
+          🎬 Browse Rails
+        </button>
+        <button class="nav-tab-btn" data-tab="control" id="nav-tab-control">
+          🔬 Model Lab
+        </button>
+        <button class="nav-tab-btn" data-tab="profile" id="nav-tab-profile">
+          📊 Taste Profile
+        </button>
+        <button class="nav-tab-btn" data-tab="history" id="nav-tab-history">
+          📜 Rec History
+        </button>
+      </nav>
+
+      <!-- Search & User Profile Switcher -->
+      <div class="user-persona-section">
+        <!-- Live Search -->
+        <div style="position:relative;">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search titles, directors, actors..." 
+            style="background:rgba(255,255,255,0.06); border:1px solid var(--border-glass); padding:0.45rem 1rem; border-radius:var(--radius-full); color:#fff; font-size:0.85rem; outline:none; width:220px;"
+          >
+        </div>
+
+        <!-- API Connection Status -->
+        <div class="status-pill" id="api-status-indicator" title="Connected to secured Flask REST API">
+          <span class="status-dot"></span> Checking API...
+        </div>
+
+        <!-- Persona Selector Dropdown -->
+        <div class="persona-selector" id="persona-selector-box">
+          <img id="header-user-avatar" class="persona-avatar" src="" alt="User Avatar">
+          <div class="persona-info">
+            <span id="header-user-name" class="persona-name">Loading...</span>
+            <select id="user-select-dropdown" style="background:transparent; border:none; color:var(--text-muted); font-size:0.75rem; cursor:pointer; outline:none;">
+              <!-- Populated by JS -->
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <!-- Loading Spinner Indicator -->
+    <div id="global-loading" style="display:none; text-align:center; padding:1.5rem 0; color:var(--accent-cyan); font-weight:600; font-size:0.9rem;">
+      ⚡ Computing recommendations via ML models...
+    </div>
+
+    <!-- TAB 1: BROWSE VIEW -->
+    <section class="tab-view" id="tab-browse">
+      
+      <!-- Hero Spotlight -->
+      <div class="hero-spotlight" id="hero-spotlight">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="hero-match-badge" id="hero-match">98% Match</span>
+            <span class="hero-type-pill">FEATURED SPOTLIGHT</span>
+          </div>
+          <h1 class="hero-title" id="hero-title">Loading Featured Title...</h1>
+          <p class="hero-synopsis" id="hero-synopsis">Analyzing user interaction graph and generating personalized entertainment picks...</p>
+          <div class="hero-metadata" id="hero-meta">
+            <!-- Populated by JS -->
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="hero-play-btn">
+              ▶ Watch Now
+            </button>
+            <button class="btn btn-secondary" id="hero-info-btn">
+              ℹ Details & Similar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendation Model Control Bar -->
+      <div class="rec-controls-bar" id="rec-controls-bar">
+        
+        <!-- Model Toggle -->
+        <div class="rec-control-group">
+          <span class="control-label">Algorithm:</span>
+          <div class="model-toggle-group" id="model-toggle-group">
+            <button class="model-btn active" data-model="hybrid" id="model-btn-hybrid">
+              Hybrid Model (Blend)
+            </button>
+            <button class="model-btn" data-model="content" id="model-btn-content">
+              Content-Based (TF-IDF)
+            </button>
+            <button class="model-btn" data-model="collaborative" id="model-btn-collaborative">
+              Collaborative (SVD)
+            </button>
+          </div>
+        </div>
+
+        <!-- Alpha Slider (Hybrid Weight) -->
+        <div class="rec-control-group" id="alpha-slider-group">
+          <span class="control-label">Blend Ratio:</span>
+          <div class="slider-container">
+            <input 
+              type="range" 
+              id="alpha-slider" 
+              class="alpha-slider" 
+              min="0.0" 
+              max="1.0" 
+              step="0.05" 
+              value="0.6"
+              title="Drag to balance Content-Based vs Collaborative Filtering"
+            >
+            <span class="slider-val-badge" id="slider-val-badge">60% Content / 40% CF</span>
+          </div>
+        </div>
+
+        <!-- Security Badge -->
+        <div style="font-size:0.75rem; color:var(--text-muted); display:flex; align-items:center; gap:0.4rem;">
+          <span style="color:var(--accent-green);">🔒 Protected API</span>
+          <span>•</span>
+          <span>Rate Limit: 120/min</span>
+        </div>
+
+      </div>
+
+      <!-- Cold Start Notification Banner (conditionally displayed) -->
+      <div class="cold-start-banner" id="cold-start-banner" style="display:none;">
+        <!-- Injected via JS -->
+      </div>
+
+      <!-- Rail 1: Top Picks For You -->
+      <section class="rail-section" id="rail-top-picks-section">
+        <div class="rail-header">
+          <div class="rail-title-group">
+            <h2 id="top-picks-title">Top Picks For You</h2>
+            <p class="rail-subtitle">Real-time suggestions computed from your taste graph</p>
+          </div>
+          <span class="rail-badge" id="top-picks-badge">HYBRID</span>
+        </div>
+        <div class="cards-grid" id="rail-top-picks-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Rail 2: Because You Loved (Similar Items) -->
+      <section class="rail-section" id="rail-similar-section">
+        <div class="rail-header">
+          <div class="rail-title-group">
+            <h2 id="rail-similar-header">Because You Loved...</h2>
+            <p class="rail-subtitle">Nearest neighbors detected via multi-dimensional cosine similarity</p>
+          </div>
+          <span class="rail-badge" style="background:rgba(0,242,254,0.15); color:var(--accent-cyan); border-color:rgba(0,242,254,0.3);">SIMILAR ITEM</span>
+        </div>
+        <div class="cards-grid" id="rail-similar-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Rail 3: Trending & Critically Acclaimed -->
+      <section class="rail-section" id="rail-trending-section">
+        <div class="rail-header">
+          <div class="rail-title-group">
+            <h2>Trending & Critically Acclaimed</h2>
+            <p class="rail-subtitle">Global viewer favorites with highest popularity index</p>
+          </div>
+          <span class="rail-badge" style="background:rgba(255,183,3,0.15); color:var(--accent-gold); border-color:rgba(255,183,3,0.3);">TRENDING</span>
+        </div>
+        <div class="cards-grid" id="rail-trending-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </section>
+
+    <!-- TAB 2: MODEL LABORATORY VIEW -->
+    <section class="tab-view" id="tab-control" style="display:none;">
+      <div id="tab-control-content">
+        <!-- Injected by loadControlView() -->
+      </div>
+    </section>
+
+    <!-- TAB 3: USER PROFILE VIEW -->
+    <section class="tab-view" id="tab-profile" style="display:none;">
+      <div id="tab-profile-content">
+        <!-- Injected by loadProfileView() -->
+      </div>
+    </section>
+
+    <!-- TAB 4: AUDIT HISTORY VIEW -->
+    <section class="tab-view" id="tab-history" style="display:none;">
+      <div id="tab-history-content">
+        <!-- Injected by loadHistoryView() -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Item Details & Similar Items Modal -->
+  <div class="modal-overlay" id="item-modal-overlay">
+    <div class="modal-box" id="item-modal-box">
+      
+      <button class="modal-close-btn" id="modal-close-btn" title="Close dialog">✕</button>
+
+      <!-- Modal Hero Backdrop -->
+      <div class="modal-hero" id="modal-hero-bg">
+        <div class="modal-hero-content">
+          <h2 id="modal-item-title" style="font-size:2rem; font-weight:800; margin-bottom:0.4rem;">Title</h2>
+          <div id="modal-item-meta" style="display:flex; gap:0.75rem; align-items:center; font-size:0.85rem; color:var(--text-secondary);">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        
+        <div class="modal-grid">
+          
+          <!-- Synopsis & Crew -->
+          <div>
+            <h4 style="font-size:1rem; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.5rem;">Synopsis</h4>
+            <p id="modal-item-synopsis" style="color:#cbd5e1; line-height:1.6; margin-bottom:1.25rem;">Overview</p>
+            
+            <div style="font-size:0.85rem; margin-bottom:0.5rem;">
+              <strong style="color:var(--text-secondary);">Director:</strong> <span id="modal-item-director"></span>
+            </div>
+            <div style="font-size:0.85rem; margin-bottom:1rem;">
+              <strong style="color:var(--text-secondary);">Cast:</strong> <span id="modal-item-cast"></span>
+            </div>
+
+            <div style="margin-top:1rem;">
+              <strong style="color:var(--text-secondary); font-size:0.85rem; display:block; margin-bottom:0.4rem;">Theme Tags:</strong>
+              <div id="modal-item-tags" style="display:flex; flex-wrap:wrap; gap:0.4rem;"></div>
+            </div>
+          </div>
+
+          <!-- Interactive Rating Widget & Watchlist -->
+          <div>
+            <div class="rating-widget" id="rating-widget-box">
+              <h4 style="font-size:0.9rem; font-weight:700; color:#fff;">Rate this Title</h4>
+              <p style="font-size:0.75rem; color:var(--text-muted);">Your rating directly recalculates user taste vector and collaborative SVD factors in real-time.</p>
+              
+              <div class="rating-stars" id="modal-rating-stars">
+                <!-- 5 Interactive Star Buttons -->
+              </div>
+              <div id="modal-rating-score" style="font-size:0.8rem; font-weight:600; color:var(--accent-gold);">Tap to rate</div>
+            </div>
+
+            <button id="modal-watchlist-btn" class="btn btn-secondary" style="width:100%;">
+              + Add to Watchlist
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Similar Items Detection Subgrid ("More Like This") -->
+        <div class="similar-items-section">
+          <h3 style="font-size:1.25rem; font-weight:800; display:flex; align-items:center; gap:0.5rem;">
+            <span>🔍 More Like This</span>
+            <span class="brand-badge" style="font-size:0.6rem;">Content Cosine Distance</span>
+          </h3>
+          <div class="similar-grid" id="modal-similar-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

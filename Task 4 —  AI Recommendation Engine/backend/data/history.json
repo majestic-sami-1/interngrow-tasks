@@ -1,0 +1,1261 @@
+[
+  {
+    "id": "rec-1789283982146",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:19:42.146147Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283982132",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:19:42.132129Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283982117",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:19:42.117577Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283976378",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:19:36.378271Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283976363",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:19:36.363695Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283976346",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:19:36.346032Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283971812",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:19:31.812448Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283971796",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:19:31.796361Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283971779",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:19:31.779409Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283950000",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "User Interaction",
+    "score": 1.0,
+    "timestamp": "2026-09-13T07:19:10.000588Z",
+    "status": "viewed_details",
+    "reasons": [
+      "User recorded action: viewed_details"
+    ]
+  },
+  {
+    "id": "rec-1789283932155",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:18:52.155954Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283932144",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:18:52.144799Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283932118",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:18:52.118863Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283928769",
+    "user_id": "user-3",
+    "item_id": "item-1",
+    "item_title": "Interstellar",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.719,
+    "timestamp": "2026-09-13T07:18:48.769572Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283928753",
+    "user_id": "user-3",
+    "item_id": "item-29",
+    "item_title": "Everything Everywhere All at Once",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.72,
+    "timestamp": "2026-09-13T07:18:48.753513Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283928736",
+    "user_id": "user-3",
+    "item_id": "item-9",
+    "item_title": "Dune: Part Two",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.726,
+    "timestamp": "2026-09-13T07:18:48.736425Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi, Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283920889",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.709,
+    "timestamp": "2026-09-13T07:18:40.889921Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283920885",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.711,
+    "timestamp": "2026-09-13T07:18:40.885478Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283920882",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.712,
+    "timestamp": "2026-09-13T07:18:40.882125Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864210",
+    "user_id": "user-1",
+    "item_id": "item-11",
+    "item_title": "The Godfather",
+    "model_type": "User Interaction",
+    "score": 1.0,
+    "timestamp": "2026-09-13T07:17:44.210152Z",
+    "status": "rated_5stars",
+    "reasons": [
+      "Rated 5.0 \u2605 by Alex Rivera"
+    ]
+  },
+  {
+    "id": "rec-1789283864198",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.898,
+    "timestamp": "2026-09-13T07:17:44.198483Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864196",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.899,
+    "timestamp": "2026-09-13T07:17:44.196285Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864194",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.899,
+    "timestamp": "2026-09-13T07:17:44.194119Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864187",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.595,
+    "timestamp": "2026-09-13T07:17:44.187390Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864185",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.598,
+    "timestamp": "2026-09-13T07:17:44.185265Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864182",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.6,
+    "timestamp": "2026-09-13T07:17:44.182555Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864175",
+    "user_id": "user-1",
+    "item_id": "item-31",
+    "item_title": "Arcane",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.936,
+    "timestamp": "2026-09-13T07:17:44.175675Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283864173",
+    "user_id": "user-1",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.936,
+    "timestamp": "2026-09-13T07:17:44.173726Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283864171",
+    "user_id": "user-1",
+    "item_id": "item-32",
+    "item_title": "Before Sunrise",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.936,
+    "timestamp": "2026-09-13T07:17:44.171550Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283864164",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Content-Based Filtering",
+    "score": 0.557,
+    "timestamp": "2026-09-13T07:17:44.164139Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi"
+    ]
+  },
+  {
+    "id": "rec-1789283864162",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Content-Based Filtering",
+    "score": 0.561,
+    "timestamp": "2026-09-13T07:17:44.162211Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi"
+    ]
+  },
+  {
+    "id": "rec-1789283864160",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Content-Based Filtering",
+    "score": 0.563,
+    "timestamp": "2026-09-13T07:17:44.160325Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama"
+    ]
+  },
+  {
+    "id": "rec-1789283864153",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:17:44.153617Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864151",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:17:44.151657Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864148",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:17:44.148736Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864141",
+    "user_id": "user-2",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.718,
+    "timestamp": "2026-09-13T07:17:44.141884Z",
+    "status": "served",
+    "reasons": [
+      "High metadata alignment with your watch history",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864139",
+    "user_id": "user-2",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.72,
+    "timestamp": "2026-09-13T07:17:44.139998Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Crime, Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864137",
+    "user_id": "user-2",
+    "item_id": "item-15",
+    "item_title": "About Time",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.72,
+    "timestamp": "2026-09-13T07:17:44.137934Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864128",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.709,
+    "timestamp": "2026-09-13T07:17:44.128960Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864126",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.711,
+    "timestamp": "2026-09-13T07:17:44.126824Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama, Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283864125",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.712,
+    "timestamp": "2026-09-13T07:17:44.125046Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846725",
+    "user_id": "user-1",
+    "item_id": "item-11",
+    "item_title": "The Godfather",
+    "model_type": "User Interaction",
+    "score": 1.0,
+    "timestamp": "2026-09-13T07:17:26.725317Z",
+    "status": "rated_5stars",
+    "reasons": [
+      "Rated 5.0 \u2605 by Alex Rivera"
+    ]
+  },
+  {
+    "id": "rec-1789283846713",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.891,
+    "timestamp": "2026-09-13T07:17:26.713631Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846711",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.891,
+    "timestamp": "2026-09-13T07:17:26.711725Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846708",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.891,
+    "timestamp": "2026-09-13T07:17:26.708919Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846702",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.596,
+    "timestamp": "2026-09-13T07:17:26.702111Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846699",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.597,
+    "timestamp": "2026-09-13T07:17:26.699988Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846697",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.599,
+    "timestamp": "2026-09-13T07:17:26.697556Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846691",
+    "user_id": "user-1",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:17:26.691943Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283846690",
+    "user_id": "user-1",
+    "item_id": "item-31",
+    "item_title": "Arcane",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:17:26.690258Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283846687",
+    "user_id": "user-1",
+    "item_id": "item-32",
+    "item_title": "Before Sunrise",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:17:26.687685Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283846681",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Content-Based Filtering",
+    "score": 0.558,
+    "timestamp": "2026-09-13T07:17:26.681178Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi"
+    ]
+  },
+  {
+    "id": "rec-1789283846679",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Content-Based Filtering",
+    "score": 0.56,
+    "timestamp": "2026-09-13T07:17:26.679699Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action"
+    ]
+  },
+  {
+    "id": "rec-1789283846678",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Content-Based Filtering",
+    "score": 0.562,
+    "timestamp": "2026-09-13T07:17:26.678143Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi"
+    ]
+  },
+  {
+    "id": "rec-1789283846670",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:17:26.670393Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846668",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:17:26.668237Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846665",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:17:26.665731Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846660",
+    "user_id": "user-2",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.718,
+    "timestamp": "2026-09-13T07:17:26.660186Z",
+    "status": "served",
+    "reasons": [
+      "High metadata alignment with your watch history",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846658",
+    "user_id": "user-2",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.72,
+    "timestamp": "2026-09-13T07:17:26.658644Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Crime, Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846656",
+    "user_id": "user-2",
+    "item_id": "item-15",
+    "item_title": "About Time",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.72,
+    "timestamp": "2026-09-13T07:17:26.656466Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Drama",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846649",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.706,
+    "timestamp": "2026-09-13T07:17:26.649424Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846647",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.708,
+    "timestamp": "2026-09-13T07:17:26.647729Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283846645",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.709,
+    "timestamp": "2026-09-13T07:17:26.645347Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283702717",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.706,
+    "timestamp": "2026-09-13T07:15:02.717341Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283702716",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.708,
+    "timestamp": "2026-09-13T07:15:02.716360Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283702715",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.709,
+    "timestamp": "2026-09-13T07:15:02.715013Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461713",
+    "user_id": "user-4",
+    "item_id": "item-1",
+    "item_title": "Interstellar",
+    "model_type": "User Interaction",
+    "score": 0.9,
+    "timestamp": "2026-09-13T07:11:01.713876Z",
+    "status": "rated_4stars",
+    "reasons": [
+      "Rated 4.5 \u2605 by Elena Rostova"
+    ]
+  },
+  {
+    "id": "rec-1789283461711",
+    "user_id": "user-1",
+    "item_id": "item-3",
+    "item_title": "The Matrix",
+    "model_type": "User Interaction",
+    "score": 1.0,
+    "timestamp": "2026-09-13T07:11:01.711976Z",
+    "status": "watched",
+    "reasons": [
+      "User recorded action: watched"
+    ]
+  },
+  {
+    "id": "rec-1789283461708",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:11:01.708364Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461707",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:11:01.707545Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461706",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:11:01.706636Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461704",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.632,
+    "timestamp": "2026-09-13T07:11:01.704242Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461703",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.634,
+    "timestamp": "2026-09-13T07:11:01.703434Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461702",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.635,
+    "timestamp": "2026-09-13T07:11:01.702437Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789283461699",
+    "user_id": "user-1",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:11:01.699511Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283461698",
+    "user_id": "user-1",
+    "item_id": "item-31",
+    "item_title": "Arcane",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:11:01.698030Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789283461696",
+    "user_id": "user-1",
+    "item_id": "item-32",
+    "item_title": "Before Sunrise",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:11:01.696389Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789265438424",
+    "user_id": "user-4",
+    "item_id": "item-1",
+    "item_title": "Interstellar",
+    "model_type": "User Interaction",
+    "score": 0.9,
+    "timestamp": "2026-09-13T07:10:38.424305Z",
+    "status": "rated_4stars",
+    "reasons": [
+      "Rated 4.5 \u2605 by Elena Rostova"
+    ]
+  },
+  {
+    "id": "rec-1789265438418",
+    "user_id": "user-1",
+    "item_id": "item-3",
+    "item_title": "The Matrix",
+    "model_type": "User Interaction",
+    "score": 1.0,
+    "timestamp": "2026-09-13T07:10:38.418631Z",
+    "status": "watched",
+    "reasons": [
+      "User recorded action: watched"
+    ]
+  },
+  {
+    "id": "rec-1789265438412",
+    "user_id": "user-5",
+    "item_id": "item-2",
+    "item_title": "Inception",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.969,
+    "timestamp": "2026-09-13T07:10:38.412614Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438411",
+    "user_id": "user-5",
+    "item_id": "item-25",
+    "item_title": "The Shawshank Redemption",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.978,
+    "timestamp": "2026-09-13T07:10:38.411597Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438410",
+    "user_id": "user-5",
+    "item_id": "item-5",
+    "item_title": "The Dark Knight",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.981,
+    "timestamp": "2026-09-13T07:10:38.410529Z",
+    "status": "served",
+    "reasons": [
+      "Popular among all viewers",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438407",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.632,
+    "timestamp": "2026-09-13T07:10:38.407258Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438405",
+    "user_id": "user-1",
+    "item_id": "item-21",
+    "item_title": "Gladiator",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.634,
+    "timestamp": "2026-09-13T07:10:38.405876Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Action",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438402",
+    "user_id": "user-1",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Hybrid Recommendation Model",
+    "score": 0.635,
+    "timestamp": "2026-09-13T07:10:38.402484Z",
+    "status": "served",
+    "reasons": [
+      "Matches your affinity for Sci-Fi",
+      "Strong collaborative match with similar viewer taste profiles"
+    ]
+  },
+  {
+    "id": "rec-1789265438398",
+    "user_id": "user-1",
+    "item_id": "item-30",
+    "item_title": "Dark",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:10:38.398744Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789265438397",
+    "user_id": "user-1",
+    "item_id": "item-31",
+    "item_title": "Arcane",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:10:38.397778Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-1789265438396",
+    "user_id": "user-1",
+    "item_id": "item-32",
+    "item_title": "Before Sunrise",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.928,
+    "timestamp": "2026-09-13T07:10:38.396704Z",
+    "status": "served",
+    "reasons": [
+      "Strong collaborative match with similar viewer taste profiles",
+      "Predicted rating: 4.7 \u2605"
+    ]
+  },
+  {
+    "id": "rec-101",
+    "user_id": "user-1",
+    "item_id": "item-9",
+    "item_title": "Dune: Part Two",
+    "model_type": "Hybrid (\u03b1=0.6)",
+    "score": 0.94,
+    "timestamp": "2026-03-08T10:15:00Z",
+    "status": "watched",
+    "reasons": [
+      "High affinity for Denis Villeneuve & Sci-Fi",
+      "Popularity among similar viewers"
+    ]
+  },
+  {
+    "id": "rec-102",
+    "user_id": "user-1",
+    "item_id": "item-17",
+    "item_title": "Severance",
+    "model_type": "Content-Based",
+    "score": 0.89,
+    "timestamp": "2026-03-08T10:15:00Z",
+    "status": "added_to_watchlist",
+    "reasons": [
+      "Shares 'mind-bending' and 'dystopian' tags with Inception"
+    ]
+  },
+  {
+    "id": "rec-103",
+    "user_id": "user-2",
+    "item_id": "item-19",
+    "item_title": "The Prestige",
+    "model_type": "Collaborative Filtering (SVD)",
+    "score": 0.91,
+    "timestamp": "2026-03-07T14:30:00Z",
+    "status": "recommended",
+    "reasons": [
+      "Users who loved Oppenheimer and Dark Knight rated 5 stars"
+    ]
+  }
+]
